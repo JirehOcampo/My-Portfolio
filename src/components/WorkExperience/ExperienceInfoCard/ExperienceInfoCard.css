@@ -1,0 +1,39 @@
+.experienceInfo-bx {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experienceInfo-data {
+  border-radius: 0.65rem;
+  border: 1.5px solid #6751b9;
+  padding: 1.5rem;
+  background: rgba(22, 17, 47, 0.398);
+  backdrop-filter: blur(1rem);
+}
+
+.experienceInfo-data h5 {
+  font-weight: 500;
+  background: linear-gradient(10deg, #ac96ff 0%, #7c5fe6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0px;
+}
+
+.experienceInfo-data h6 {
+  font-size: 0.8rem;
+}
+
+.experience-location {
+  margin-bottom: 0px;
+}
+
+.experience-date {
+  border-bottom: 1.5px solid #6751b9;
+  padding-bottom: 1rem;
+}
+
+.experienceInfo-data p {
+  margin-top: 1.5rem;
+}

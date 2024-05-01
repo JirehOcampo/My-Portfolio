@@ -1,0 +1,32 @@
+#skills {
+  padding-top: 1px;
+}
+
+.skill-bx {
+  background: rgba(22, 17, 47, 0.398);
+  backdrop-filter: blur(1rem);
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin: 100px;
+}
+
+.skill-desc {
+  margin-top: 20px;
+}
+
+.skill-slider {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 50px;
+  position: relative;
+}
+
+.skill-slider .item div {
+  margin: 0 auto;
+  width: 50%;
+}
+.progress-desc {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}

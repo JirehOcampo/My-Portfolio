@@ -1,0 +1,41 @@
+#experience {
+  padding-top: 80px;
+}
+
+.experience-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.experience-bx {
+  flex: 1;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+#experience {
+  position: relative;
+}
+
+.experience-container::after,
+.experience-container::before {
+  content: " ";
+  width: 18.5rem;
+  height: 18.5rem;
+  border-radius: 28.5rem;
+  background: #7e61e7;
+  position: absolute;
+  z-index: -1;
+  filter: blur(225px);
+}
+
+.experience-container::after {
+  right: 0px;
+  bottom: 0px;
+}
+
+.experience-container::before {
+  left: 0px;
+}

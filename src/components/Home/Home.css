@@ -1,0 +1,136 @@
+.home--container::after,
+.home--container::before {
+  content: " ";
+  width: 28.5rem;
+  height: 28.5rem;
+  border-radius: 28.5rem;
+  background: #7e61e7;
+  position: absolute;
+  z-index: -1;
+  filter: blur(225px);
+}
+
+.home--container::after {
+  top: -3rem;
+  left: -5rem;
+}
+
+.home--container::before {
+  bottom: 2rem;
+  right: 0rem;
+}
+
+.hero--heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.custom-text {
+  display: block;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-description {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 70%;
+}
+
+.profile--picture {
+  width: 80%;
+  border-radius: 30% 70% 28% 72% / 58% 36% 64% 42%;
+}
+
+mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.icon-container {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.65rem;
+  border: 1.5px solid #7c66e3;
+}
+
+.icon--img {
+  width: 1.5rem;
+  height: auto;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.icon--img:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .home--container,
+  .icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home--container::after,
+  .home--container::before {
+    content: " ";
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .home--container::after {
+    top: 0rem;
+    left: 0rem;
+  }
+
+  .home--container::before {
+    bottom: 2rem;
+    right: 0rem;
+  }
+
+  .hero--description {
+    margin-top: 0px !important;
+  }
+
+  .hero--heading {
+    margin-bottom: 0%;
+  }
+
+  .profile--picture {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero--heading {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem !important;
+  }
+
+  .home--container::after,
+  .home--container::before {
+    content: " ";
+    width: 15rem;
+    height: 15rem;
+  }
+}

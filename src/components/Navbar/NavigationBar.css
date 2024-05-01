@@ -1,0 +1,77 @@
+.nav-link {
+  position: relative;
+  margin-left: 15px;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar.active {
+  background-color: #7c66e3 !important;
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: 1000;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-link::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.nav-link.active::before {
+  content: " ";
+  width: 100%;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  opacity: 1;
+  transform: translateX(0);
+  bottom: 0;
+}
+
+.hireme {
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  transition: all 0.3 ease;
+  outline: 1.5px solid transparent;
+}
+
+.hireme:hover {
+  color: #a993fe;
+  background: #000;
+  outline: 1.5px solid #a993fe;
+}
+
+.navbar-toggler {
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  color: white;
+}
+
+@media (max-width: 769px) {
+  .nav-link {
+    margin-left: auto;
+  }
+}
